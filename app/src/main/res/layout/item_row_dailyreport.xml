@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeClickDailyreport"
+    android:padding="12dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/dailyreportIdRow"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/dailyreportDateRow"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/dailyreportIdRow"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/qrDailyreport"
+            android:text="@string/edit"
+            android:background="@color/colorBgPrimary"
+            android:src="@drawable/ic_qr_code_white"
+            android:layout_marginStart="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dailyreportDocumentRow"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
